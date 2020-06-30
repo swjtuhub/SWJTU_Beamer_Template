@@ -1,0 +1,2 @@
+# SWJTU_Beamer_Template
+本模板是基于LaTeX的beamer模板类制作的西南交通大学非官方幻灯片模板
