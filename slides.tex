@@ -1,0 +1,193 @@
+%Compile Recipe: XeLaTeX->biber->XeLaTeX->XeLaTeX
+
+\documentclass[11pt]{SWJTUBeamer}
+
+\addbibresource{ref.bib}%add the bib file for bibtex,if you don't want to use bibliography,please comment this line and the line below
+\beamertemplatetextbibitems
+
+\title[SWJTU Beamer Template]{Beamer Template\\for SWJTUers}
+\subtitle{西南交通大学\\Beamer 模板}
+\author[User]{User}%words in the [] will be displayed on the bottom of every page,while the one in the {} will be displayed in the titlepage
+\institute[School]{School}%the same to the "author"
+\date{date} %Activate to display a given date or no date (if empty),otherwise the current date is printed
+
+\begin{document}
+
+%----------------------------------------------------------------------
+% Title frame
+\begin{frame}
+    \maketitle
+\end{frame}
+
+\section{Generality}
+
+\begin{frame}{Ordered List}
+    \begin{enumerate}
+        \item First
+        \item Second
+              \begin{enumerate}
+                  \item First
+                  \item Second
+                  \item ...
+              \end{enumerate}
+        \item ...
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Unordered List}
+    \begin{itemize}
+        \item First
+        \item Second
+        \item ...
+    \end{itemize}
+\end{frame}
+
+\section{Methods}
+
+\begin{frame}{Block}
+    \begin{block}{Part 1}
+        Test.
+    \end{block}
+    \begin{theorem}[Thm 1]
+        Thm.
+    \end{theorem}
+    \begin{proof}
+        Q.E.D.
+    \end{proof}
+\end{frame}
+
+\begin{frame}{Enumerate}
+    \begin{equation}
+        growth=\beta_{0}+\beta_{1}hsr_{it}+\beta_{2}t_{it}+\beta_{3}hsr_{it}*t_{it}+\sum^{6}_{k=1}\alpha_{k}X_{it}+u_{i}+\varepsilon_{it}\label{eq1}
+    \end{equation}
+    \begin{enumerate}
+        \item First \redstress{important}
+        \item Second \eqref{eq1}
+    \end{enumerate}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Algorithm}
+    \begin{algorithm2e}[H]
+        \caption{Algorithm 1}\label{alg:em}
+        \begin{algorithmic}[1]
+            \REQUIRE Param
+            \ENSURE $a$
+            \REPEAT
+            \STATE Compute $a_n$
+            \UNTIL convergence
+            \RETURN $a\leftarrow a_n$
+        \end{algorithmic}
+    \end{algorithm2e}
+\end{frame}
+
+\begin{frame}{Images}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\textwidth]{swjtu_logo.png}
+        \caption{SWJTU}\label{fig:jtu}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Columns}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.95\textwidth]{swjtu_logo.png}
+                \caption{SWJTU}\label{fig:SWJTU}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}
+                \item First
+                \item Second
+                \item ...
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Subfigure}
+    \begin{figure}
+        \centering
+        \subfigure[]{\includegraphics[width=0.47\textwidth]{swjtu_logo.png}}
+        \subfigure[]{\includegraphics[width=0.47\textwidth]{swjtu_logo.png}}
+        \caption{Subfigure\footnote{See: \url{https://www.swjtu.edu.cn/}}}\label{fig:subfig}
+    \end{figure}
+\end{frame}
+
+% To put the content of a frame in several pages, use allowframebreaks
+\begin{frame}[allowframebreaks]
+    \frametitle{Longframe}
+    \begin{itemize}
+        \item First
+        \item Second
+        \item ...
+\end{itemize}
+\end{frame}
+
+\section{Promotion}
+
+\begin{frame}{More block}
+    \begin{exampleblock}{Example}
+        Eg1.
+    \end{exampleblock}
+    \begin{alertblock}{Attention}
+        Test
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Table}
+    \begin{table}[]
+        \centering
+        \caption{Data}
+        \label{tab1}
+        \begin{tabular}{@{}ccccc@{}}
+            \toprule
+                    & $q$ & $r$ & $a$ & $p$ \\ \midrule
+            Reality & $1$ & $5$ & 2   & 3   \\
+            Method1 & $4$ & $3$ & 1   & 1   \\
+            Method2 & $4$ & $3$ & 2   & 2   \\
+            Method3 & $5$ & $2$ & 3   & 3   \\
+            Method4 & $4$ & $2$ & 2   & 2   \\ \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Code}
+    \begin{lstlisting}[language=c]
+#include"stdio.h"
+#include"stdlib.h"
+#define _CRT_SECURE_NO_WARNINGS
+int main(int argc, char* argv[ ], char* envp[ ])
+    {
+        printf("Hello,SWJTUers!");
+        return 0;
+    }
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Conclusion}
+    \begin{description}
+        \item[I] First of all
+        \item[II] Besides
+        \item[III] Last but not least
+    \end{description}
+\end{frame}
+
+\begin{frame}{Thanking}
+    \begin{block}{Thanking}
+        Thanks.
+    \end{block}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{A Example of Bibliography}
+    \nocite{*}
+    \printbibliography
+\end{frame}
+
+\end{document}
