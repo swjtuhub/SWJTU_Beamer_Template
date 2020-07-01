@@ -1,0 +1,13 @@
+/image/*
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.xml
+*.gz
