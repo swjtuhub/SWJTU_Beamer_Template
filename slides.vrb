@@ -1,0 +1,11 @@
+\frametitle{Code}
+    \begin{lstlisting}[language=c]
+#include"stdio.h"
+#include"stdlib.h"
+#define _CRT_SECURE_NO_WARNINGS
+int main(int argc, char* argv[ ], char* envp[ ])
+    {
+        printf("Hello,SWJTUers!");
+        return 0;
+    }
+\end{lstlisting}

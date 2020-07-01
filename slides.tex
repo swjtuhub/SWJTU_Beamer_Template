@@ -2,13 +2,14 @@
 
 \documentclass[11pt]{SWJTUBeamer}
 
+\usepackage[backend=biber,style=gb7714-2015,sorting=none]{biblatex}
 \addbibresource{ref.bib}%add the bib file for bibtex,if you don't want to use bibliography,please comment this line and the line below
 \beamertemplatetextbibitems
 
-\title[SWJTU Beamer Template]{Beamer Template\\for SWJTUers}
+\title[SWJTU Beamer Template]{Beamer Template\\for SWJTUers}%words in the [] will be displayed on the bottom of every page,while the one in the {} will be displayed in the titlepage
 \subtitle{西南交通大学\\Beamer 模板}
-\author[User]{User}%words in the [] will be displayed on the bottom of every page,while the one in the {} will be displayed in the titlepage
-\institute[School]{School}%the same to the "author"
+\author[User]{User}%the same to the "title"
+\institute[School]{School}%the same to the "title"
 \date{date} %Activate to display a given date or no date (if empty),otherwise the current date is printed
 
 \begin{document}
@@ -42,6 +43,28 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Timeline}
+
+    \begin{table}
+        \centering
+        \renewcommand\arraystretch{1.4}\arrayrulecolor{jtublue}
+        \captionsetup{singlelinecheck=false, labelfont=sc, labelsep=quad}
+        \caption{Timeline}\vskip -1.5ex
+        \begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{5cm}}
+            \toprule
+            \addlinespace[0.5ex]
+            2020.6-2020.7   & Topic selection        \\
+            2020.8-2020.9   & Literature Review      \\
+            2020.10-2020.12 & Data collection        \\
+            2021.1-2021.2   & Write academic papers  \\
+            2021.3-2021.5   & The concluding defense \\
+        \end{tabular}
+    \end{table}
+
+\end{frame}
+
+
 \section{Methods}
 
 \begin{frame}{Block}
@@ -64,6 +87,45 @@
         \item First \redstress{important}
         \item Second \eqref{eq1}
     \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Tikzpicture}
+
+    \begin{figure}[!t]
+        \centering
+        \resizebox{0.75\textheight}{!}{
+            \begin{tikzpicture}
+                [mindmap,
+                    every node/.style={concept, execute at begin node=\hskip0pt, font=\Large\bfseries},
+                    root concept/.append style={concept color=jtublue, fill=white, line width=1ex, text=jtublue, font=\huge\bfseries},
+                    method a/.style={concept color=red, line width=1ex, text=white, font=\Large\bfseries},
+                    method b/.style={concept color=orange, line width=1ex, text=white, font=\Large\bfseries},
+                    methods a/.style={concept color=red!50, line width=1ex, text=white, font=\Large\bfseries},
+                    methods b/.style={concept color=orange!50, line width=1ex, text=white, font=\Large\bfseries},
+                    method c/.style={concept color=red, line width=1ex, text=white, font=\Large\bfseries},
+                    method d/.style={concept color=orange, line width=1ex, text=white, font=\Large\bfseries},
+                    methods c/.style={concept color=red!50, line width=1ex, text=white, font=\Large\bfseries},
+                    methods d/.style={concept color=orange!50, line width=1ex, text=white, font=\Large\bfseries},
+                    grow cyclic,
+                    level 1/.append style={level distance=4.5cm, sibling angle=45},
+                    level 2/.append style={level distance=3.5cm, sibling angle=75}]
+                \node [root concept] {HSR\&\\Econ.} % root
+                child [missing] {}
+                child [method a] { node {Combined Effect}
+                        child [methods a] { node {Returns to Scale} }
+                        child [methods a] { node {Externality} }
+                        child [methods a] { node {Spatial Competition} } }
+                child [missing] {}
+                child [method b] { node {Spillover Effect} }
+                child [missing] {}
+                child [method c] { node {Corridor Effect} }
+                child [missing] {}
+                child [method d] { node {Time-Lag Effect} };
+            \end{tikzpicture}
+        }
+    \end{figure}
+
 \end{frame}
 
 \section{Conclusion}
@@ -125,7 +187,7 @@
         \item First
         \item Second
         \item ...
-\end{itemize}
+    \end{itemize}
 \end{frame}
 
 \section{Promotion}

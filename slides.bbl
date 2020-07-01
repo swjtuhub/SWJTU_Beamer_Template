@@ -1,0 +1,92 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{name7}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1e43e727fa66bd014109701bb431e9ed}{%
+           family={Karl·Marx、Friedrich·Engels},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Beijing}%
+      }
+      \list{publisher}{1}{%
+        {People's Publishing House}%
+      }
+      \strng{namehash}{1e43e727fa66bd014109701bb431e9ed}
+      \strng{fullhash}{1e43e727fa66bd014109701bb431e9ed}
+      \strng{bibnamehash}{1e43e727fa66bd014109701bb431e9ed}
+      \strng{authorbibnamehash}{1e43e727fa66bd014109701bb431e9ed}
+      \strng{authornamehash}{1e43e727fa66bd014109701bb431e9ed}
+      \strng{authorfullhash}{1e43e727fa66bd014109701bb431e9ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Manifesto of the Communist Party}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{chinese}
+      \field{year}{1980}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{name7}
+    \endentry
+    \entry{paper3}{article}{}
+      \name{author}{1}{}{%
+        {{hash=846bf706a6df7abd68b6af013a376cf7}{%
+           family={Qin.Yu},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{846bf706a6df7abd68b6af013a376cf7}
+      \strng{fullhash}{846bf706a6df7abd68b6af013a376cf7}
+      \strng{bibnamehash}{846bf706a6df7abd68b6af013a376cf7}
+      \strng{authorbibnamehash}{846bf706a6df7abd68b6af013a376cf7}
+      \strng{authornamehash}{846bf706a6df7abd68b6af013a376cf7}
+      \strng{authorfullhash}{846bf706a6df7abd68b6af013a376cf7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Geography}
+      \field{langid}{english}
+      \field{number}{489-520}
+      \field{title}{"No County Left Behind?"The Distributional Impact of High-Speed Rail Upgrades in China}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{paper3}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

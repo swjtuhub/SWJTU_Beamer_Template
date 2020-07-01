@@ -28,7 +28,7 @@
 %--------------------------------------------------------
 %Some packages
 \usepackage{ctex}
-\usepackage{inputenc}
+%\usepackage{inputenc}
 \usepackage{fontspec}
 \usepackage{comment}
 \usepackage{indentfirst}
@@ -39,7 +39,6 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{booktabs} 
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 \usepackage[algo2e,ruled,vlined]{algorithm2e}
 \usepackage{array} 
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
@@ -52,6 +51,14 @@
 \usepackage{algorithmic}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[TS1,T1]{fontenc}
+\usepackage{xcolor}%[x11names]
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{pgf}
+\usepackage{tikz}
+
 %--------------------------------------------------------
 %Some settings
 \setCJKmainfont{FandolSong}
@@ -89,6 +96,14 @@
 \renewcommand{\proofname}{Proof}
 \renewcommand{\algorithm}{Algorithm}
 \newcommand{\redstress}[1]{{\color{red}{#1}}}
+\newcommand{\foo}{\color{jtublue}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+\usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, positioning, fit, petri, automata,mindmap,trees}
+\definecolor{yellow1}{rgb}{1,0.8,0.2}
+\definecolor{DeepSkyBlue4}{RGB}{0,104,139}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\renewcommand{\emph}{\textbf}
+
+
 %--------------------------------------------------------
 % Get rid of the navigation bar 
 %--------------------------------------------------------
