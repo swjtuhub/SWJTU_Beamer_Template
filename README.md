@@ -12,6 +12,6 @@
 
 其中，slides.pdf文件是作者上传模板前最后一次编译时产生的范例pdf文件输出，为非必需文件
 
-作者在制作时使用的是TeXlive 2019套件，制作过程中均采用XeLaTeX->biber->XeLaTeX->XeLaTeX的编译链进行编译，未测试使用pdfLaTeX进行编译的可行性，对使用pdfLaTeX进行编译的可能产生的错误不做解释。
+作者在制作时使用的是TeXlive 2019套件，制作过程中均采用XeLaTeX->biber->XeLaTeX->XeLaTeX的编译链进行编译，未测试使用pdfLaTeX/LuaLaTeX进行编译的可行性，对使用pdfLaTeX/LuaLaTeX进行编译的可能产生的错误不做解释。
 
 模板使用的相关问题，大都已在TeX主文件与cls模板类文件的注释中加以说明，如有疑问与建议，欢迎致信至本人电子邮箱: [Alexey.I.Vladimirov@my.swjtu.edu.cn](mailto:Alexey.I.Vladimirov@my.swjtu.edu.cn)
