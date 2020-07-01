@@ -28,7 +28,6 @@
 %--------------------------------------------------------
 %Some packages
 \usepackage{ctex}
-%\usepackage{inputenc}
 \usepackage{fontspec}
 \usepackage{comment}
 \usepackage{indentfirst}
