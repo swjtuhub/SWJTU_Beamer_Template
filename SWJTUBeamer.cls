@@ -27,7 +27,7 @@
 \usepackage{comment}
 %--------------------------------------------------------
 %Some packages
-\usepackage{ctex}
+\usepackage{xeCJK}
 \usepackage{fontspec}
 \usepackage{comment}
 \usepackage{indentfirst}
@@ -50,7 +50,7 @@
 \usepackage{algorithmic}
 \usepackage{xcolor}
 \usepackage{listings}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[TS1,T1]{fontenc}
 \usepackage{xcolor}%[x11names]
 \usepackage{colortbl}
@@ -60,7 +60,7 @@
 
 %--------------------------------------------------------
 %Some settings
-\setCJKmainfont{FandolSong}
+%\setCJKmainfont{FandolSong}
 \usefonttheme{serif}
 \graphicspath{{image/}} 
 \hypersetup{CJKbookmarks=true}
